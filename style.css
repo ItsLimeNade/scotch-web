@@ -1,0 +1,103 @@
+body {
+    background-color: #121212;
+}
+
+@keyframes title {
+
+    0% {
+        top: 0px
+    }
+
+    50% {
+        top: 15px
+    }
+
+    100% {
+        top: 0px
+    }
+
+}
+
+@keyframes downloadanim {
+
+    0% {
+        left: 0px
+    }
+
+    25% {
+        left: 9px
+    }
+
+    50% {
+        left: 0px
+    }
+
+    75% {
+        left: -9px
+    }
+
+    100% {
+        left: 0px;
+    }
+
+}
+
+#title {
+    color: white;
+    position: relative;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 60px;
+    animation-name: title;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+#download {
+    color: black;
+    position: relative;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    animation-name: downloadanim;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+
+}
+
+a:link {
+    background-color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    background-color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: white;
+    text-decoration: none;
+}
+
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
